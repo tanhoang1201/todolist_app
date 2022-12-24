@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply font-body bg-[#efefef] text-[#333] dark:bg-slate-900;
+	}
+}
+
+body {
+	.overflow-overlay {
+		overflow: overlay;
+	}
+
+	div[class*="MuiInputBase-root-MuiOutlinedInput-root"]:hover .MuiOutlinedInput-notchedOutline {
+		border-color: #3b82f6;
+	}
+
+	div[class*="MuiInputBase-root-MuiOutlinedInput-root"].Mui-focused
+		.MuiOutlinedInput-notchedOutline {
+		border-color: #3b82f6;
+		border-width: 2px;
+	}
+
+	input[class*="css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"] {
+		height: 100%;
+	}
+
+	label[class*="MuiFormLabel-root"] {
+		font-weight: 600;
+	}
+
+	.css-qfz70r-MuiFormGroup-root {
+		display: flex;
+		gap: 24px;
+	}
+}
+
+html *::-webkit-scrollbar {
+	border-radius: 0;
+	width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+	border-radius: 0;
+	background-color: rgba(0, 0, 0, 0);
+}
